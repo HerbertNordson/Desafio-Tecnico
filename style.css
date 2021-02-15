@@ -32,6 +32,16 @@ body {
   width: 10%;
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.ocean {
+  position: absolute;
+  width: 100%;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -39,19 +49,16 @@ body {
   width: 1150px;
 }
 
-.ocean {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-
 .topo {
   display: flex;
+  justify-content: center;
 }
 
 .logo {
   position: relative;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
+  padding-top: 100px;
 }
+
+
