@@ -9,35 +9,57 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Inema</title>
   </head>
   <body>
     <div class="header">
-      <div class="menu">
-        <button>INICIO</button>
-        <button>O CONCURSO</button>
-        <button>SOBRE</button>
-        <button>REGRAS</button>
-        <button>INSCRIÇÃO</button>
-      </div>
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#oConcurso">O CONCURSO</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#regras">REGRAS</a></li>
+          <li><a href="#inscricao">INSCRIÇÃO</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="images">
-      <div class="ocean">
-        <img
-          src="ocean-sea-pacific-calm-ripples-nature-water.png"
-          alt="Visão do oceano no horizonte"
-        />
+
+    <section id="inicio">
+      <div class="image">
+        <div class="ocean">
+          <img
+            src="ocean-sea-pacific-calm-ripples-nature-water.png"
+            alt="Visão do oceano no horizonte"
+          />
+		  
+        </div>
+		<img
+		class="marca"
+		 src="logo.png" alt="Logo do concurso"/>
+
+		<!-- Caso o layout não seja integrado como na imagem acima > logo.png < basta retirar o comentário da linhas de código abaixo e fazer o mesmo no style.CSS; -->
+       
+		<!-- <div class="logotipo">
+          <img class="logo" src="marca.png" alt="Logo do concurso" />
+          <div class="title">
+            <span>Varal das Águas</span>
+            <h2>Concurso de Fotografia</h2>
+          </div> -->
+        </div>
       </div>
-      <div class="logotipo">
-        <img class="logo" src="Logo.png" alt="Logo do concurso" />
-      </div>
-    </div>
+    </section>
 
     <div class="body">
       <div class="center">
+        <div class="telaCadastro"></div>
         <div class="context">
-          <div class="oConcurso">
+          <section id="oConcurso">
             <div class="conteudoConcurso">
               <h2>O CONCURSO</h2>
               <p>
@@ -48,7 +70,7 @@
                 cordel) que aborde a temática água.
               </p>
             </div>
-            <div class="inscricao">
+            <section id="inscricao">
               <div class="blocoInscricao">
                 <div>
                   <h4>EXPOSIÇÃO DE FOTOS</h4>
@@ -63,9 +85,10 @@
                 </div>
               </div>
               <button class="botaoInscricao">Faça Sua Inscrição</button>
-            </div>
-          </div>
-          <div class="sobre">
+            </section>
+          </section>
+
+          <section id="sobre">
             <h2>SOBRE</h2>
             <p>Objetivos</p>
             <p>
@@ -92,8 +115,9 @@
               redes sociais (Favebook e Instagram) do Inema, receberá como
               prêmio.
             </p>
-          </div>
-          <div class="regras">
+          </section>
+
+          <section id="regras">
             <h2>REGRAS</h2>
             <p>
               Todas as fotos que retrate da temática água (tais como situação de
@@ -124,12 +148,15 @@
               A foto vencedora irá ganhar um kit de brinde (Agenda, caneta,
               livro).
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </div>
+
     <div class="rodape">
       <img src="marca_inema_sem_fundo.png" alt="marca do inema" />
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
