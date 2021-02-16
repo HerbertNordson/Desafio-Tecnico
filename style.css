@@ -2,34 +2,59 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 body {
   background-color: #ffefdb;
+  position: absolute;
+}
+
+.ocean {
+  width: 100%;
 }
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
   width: 100%;
+
   background-color: #00688b;
-  padding: 1em;
+  padding: 2em;
 }
 
 .menu {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  flex-direction: initial;
   width: 1150px;
 }
 
 .menu > button {
   background-color: transparent;
+  text-align: left;
   color: #009acd;
-  border: 0;
-  font-size: 18px;
-  width: 10%;
+  border: 0 transparent;
+  font-size: 16px;
+  width: 120px;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    width: 480px;
+    padding: 0.5em;
+  }
+  .menu > button {
+    text-align: center;
+    font-size: 8px;
+    width: 70px;
+  }
+  .header {
+    padding: 0;
+  }
 }
 
 .body {
@@ -37,28 +62,231 @@ body {
   justify-content: center;
 }
 
-.ocean {
-  position: absolute;
-  width: 100%;
-}
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1150px;
+  flex-direction: column;
+  max-width: 1150px;
 }
 
-.topo {
+.images {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.logotipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1150px;
+  padding-bottom: 400px;
+  position: absolute;
 }
 
 .logo {
-  position: relative;
-  width: 600px;
-  height: 300px;
-  padding-top: 100px;
+  position: absolute;
+  max-width: 800px;
+  max-height: 600px;
 }
 
+@media (max-width: 1024px) {
+  .logo {
+    width: 400px;
+    top: -30px;
+  }
+}
 
+@media (max-width: 800px) {
+  .logo {
+    width: 300px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 240px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+    top: 110px;
+  }
+}
+
+.context {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  max-width: 1150px;
+  padding: 4em;
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 480px) {
+  .context {
+    max-width: 450px;
+    padding: 0;
+    padding-top: 1em;
+  }
+}
+
+.oConcurso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  max-height: 600px;
+  padding: 2em;
+  padding-bottom: 0;
+  border-bottom: 2px solid grey;
+}
+
+.conteudoConcurso {
+  position: relative;
+  top: -100px;
+  max-width: 600px;
+  padding: 2em;
+  padding-left: 0;
+  padding-top: 0;
+  font-size: 19px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2em;
+  color: #00688b;
+}
+@media (max-width: 480px) {
+  .oConcurso {
+    max-width: 480px;
+  }
+  .conteudoConcurso {
+    top: -60px;
+    padding: 0;
+    font-size: 12px;
+  }
+  h2 {
+    padding-bottom: 1em;
+    font-size: 16px;
+  }
+}
+.inscricao {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  top: -140px;
+  max-width: 400px;
+}
+
+.blocoInscricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  width: 250px;
+
+  font-size: 17px;
+  background-color: #00688b;
+}
+
+.blocoInscricao h4 {
+  color: #009acd;
+  padding: 2em;
+  padding-bottom: 0;
+}
+
+.blocoInscricao > div > p {
+  padding: 2em;
+  color: #f7f7f7;
+}
+
+.botaoInscricao {
+  max-width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+
+  font-size: 18px;
+
+  color: #f7f7f7;
+  background-color: #00688b;
+  border: 0 transparent;
+}
+
+@media (max-width: 480px) {
+  .inscricao {
+    max-width: 200px;
+    top: -70px;
+  }
+  .blocoInscricao {
+    max-width: 125px;
+    font-size: 8px;
+  }
+  .botaoInscricao {
+    font-size: 12px;
+    margin-top: 25px;
+    max-width: 80px;
+  }
+}
+.sobre,
+.regras {
+  padding: 2em;
+  font-size: 19px;
+}
+
+.sobre > p,
+.regras > p {
+  padding: 1em;
+}
+
+.regras li {
+  padding: 0.5em;
+}
+
+@media (max-width: 480px) {
+  .sobre,
+  .regras {
+    padding: 1em;
+    font-size: 12px;
+  }
+  .sobre > p,
+  .regras > p {
+    padding: 0.5em;
+  }
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #f7f7f7;
+  border-top: 10px solid #00688b;
+}
+
+.rodape img {
+  width: 10%;
+}
+
+@media (max-width: 480px) {
+  .rodape {
+    padding: 1em;
+    border-top: 5px solid #00688b;
+  }
+  .rodape img {
+    width: 20%;
+  }
+}
