@@ -18,145 +18,209 @@
     <title>Inema</title>
   </head>
   <body>
-    <div class="header">
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="#inicio">INICIO</a></li>
-          <li><a href="#oConcurso">O CONCURSO</a></li>
-          <li><a href="#sobre">SOBRE</a></li>
-          <li><a href="#regras">REGRAS</a></li>
-          <li><a href="#inscricao">INSCRIÇÃO</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <section id="inicio">
-      <div class="image">
-        <div class="ocean">
-          <img
-            src="ocean-sea-pacific-calm-ripples-nature-water.png"
-            alt="Visão do oceano no horizonte"
-          />
-		  
-        </div>
-		<img
-		class="marca"
-		 src="logo.png" alt="Logo do concurso"/>
+	<div>
 
-		<!-- Caso o layout não seja integrado como na imagem acima > logo.png < basta retirar o comentário da linhas de código abaixo e fazer o mesmo no style.CSS; -->
-       
-		<!-- <div class="logotipo">
-          <img class="logo" src="marca.png" alt="Logo do concurso" />
-          <div class="title">
-            <span>Varal das Águas</span>
-            <h2>Concurso de Fotografia</h2>
-          </div> -->
-        </div>
-      </div>
+		<div class="header">
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#inicio">INICIO</a></li>
+					<li><a href="#oConcurso">O CONCURSO</a></li>
+					<li><a href="#sobre">SOBRE</a></li>
+					<li><a href="#regras">REGRAS</a></li>
+					<li><a href="#inscricao">INSCRIÇÃO</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<section id="inicio">
+			<div class="image">
+				<div class="ocean">
+					<img
+					src="ocean-sea-pacific-calm-ripples-nature-water.png"
+					alt="Visão do oceano no horizonte"
+					/>
+					
+				</div>
+				<img
+				class="marca"
+				src="logo.png" alt="Logo do concurso"/>
+			</div>
+		</div>
     </section>
-
+	
     <div class="body">
-      <div class="center">
-        <div class="telaCadastro"></div>
-        <div class="context">
-          <section id="oConcurso">
-            <div class="conteudoConcurso">
-              <h2>O CONCURSO</h2>
-              <p>
-                Concurso de fotografia para todos os técnicos do Inema para
+		<div class="center">
+			<div class="telaCadastro">
+				<section id="cadastro">
+					<div class="card">
+					  <div class="top">
+						<h2>Cadastro</h2> 
+						<a class="fechar" href="">X</a>
+					  </div>
+					  <div class="dados">
+						<form id="register1" action="" method="post">
+						  <label for="name">Nome do colaborador:</label>
+						  <input
+							type="text"
+							name="name"
+							id="nomeDoColaborador"
+							placeholder="Insira seu nome"
+						  />
+						</form>
+						<form id="register2" action="" method="post">
+						  <label for="email">Nome da foto:</label>
+						  <input
+							type="text"
+							name="email"
+							id="nomeDaFoto"
+							placeholder="Insira o nome da foto"
+						  />
+						</form>
+					  </div>
+					  <div class="dados">
+						<form id="register3" action="" method="post">
+						  <label for="name">Local da foto:</label>
+						  <input
+							type="text"
+							name="name"
+							id="localDaFoto"
+							placeholder="Insira o local da foto"
+						  />
+						</form>
+						<form id="register4" action="" method="post">
+						  <label for="email">Data de registro:</label>
+						  <input
+							type="date"
+							name="email"
+							id="dataDeRegistro"
+							placeholder="MM/DD/YYYY"
+						  />
+						</form>
+					  </div>
+					  <div class="anexar">
+						<h3>Anexar Foto</h3>
+						<input type="file" id="arquivo" /> 
+					  </div>
+					  <div class="termos">
+						<h3>Termos</h3>
+						<div> 
+						<textarea class="termosDeUso">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+		
+						The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+						</textarea>
+						</div>
+						<div class="liEconcordo"> 
+						<input type="checkbox" id="termo"/> <span>Eu li e concordo com os termos</span>
+						</div>	
+						<div class="botaoEnviar"> 
+							<button type="submit" id="enviar" onclick="envio()"> Enviar </button>
+						</div>
+					  </div>
+					</div>
+				  </section>
+			</div>
+			<div class="context">
+				<section id="oConcurso">
+					<div class="conteudoConcurso">
+						<h2>O CONCURSO</h2>
+						<p>
+							Concurso de fotografia para todos os técnicos do Inema para
                 exposição de fotos que retratem a temática água (os desafios e
                 as belezas encontradas em campo) pelos colaboradores. Além de
                 uma apresentação cultural com um artista de rua (poesia, musica,
                 cordel) que aborde a temática água.
-              </p>
-            </div>
-            <section id="inscricao">
-              <div class="blocoInscricao">
-                <div>
-                  <h4>EXPOSIÇÃO DE FOTOS</h4>
-                  <p>
-                    20 á 14/03/2017 nas divisórias da Ouvidoria (em frente ao
-                    elevador)
-                  </p>
+			</p>
+		</div>
+		<section id="inscricao">
+			<div class="blocoInscricao">
+				<div>
+					<h4>EXPOSIÇÃO DE FOTOS</h4>
+					<p>
+						20 á 14/03/2017 nas divisórias da Ouvidoria (em frente ao
+						elevador)
+					</p>
                 </div>
                 <div>
-                  <h4>APRESENTAÇÃO</h4>
-                  <p>20/03/2017 das 16:30h ás 17:30h.</p>
+					<h4>APRESENTAÇÃO</h4>
+					<p>20/03/2017 das 16:30h ás 17:30h.</p>
                 </div>
-              </div>
-              <button class="botaoInscricao">Faça Sua Inscrição</button>
-            </section>
-          </section>
-
-          <section id="sobre">
-            <h2>SOBRE</h2>
-            <p>Objetivos</p>
-            <p>
-              Promover a seleção de 100 fotografias produzidas por colaboradores
-              do Inema em comemoração ao dia da água, que será elaborado um
-              mural de fotos denominado de "Varal das Águas".
-            </p>
-            <p>Dos Participantes</p>
-            <p>
-              Poderão participar do Concurso Fotográfico 2017: Todos os
-              colaboradores do Instituto do Meio Ambiente e Recursos Hídricos -
-              INEMA e Secretaria do Meio Ambiente - SEMA.
-            </p>
-            <p>Das especificações das fotografias participantes</p>
-            <p>
-              As fotografias devem abordar somente o tema OS DESAFIOS E AS
-              BELEZAS RETRATADAS EM CAMPO REFERENTE À SITUAÇÃO HÍDRICA, devendo
-              ser obrigatoriamente a foto ser tirada em inspeção em campo a
-              serviço do Inema.
-            </p>
-            <p>Premiação final do concurso</p>
-            <p>
-              As 05 (cinco) primeiras fotografias que forem mais votadas nas
-              redes sociais (Favebook e Instagram) do Inema, receberá como
-              prêmio.
-            </p>
-          </section>
-
-          <section id="regras">
-            <h2>REGRAS</h2>
-            <p>
-              Todas as fotos que retrate da temática água (tais como situação de
-              secas ou excedentes hídricos, as belexas e os desafios de se
-              trabalhar com os recursos híbridos etc.) serão bem vindas.
-            </p>
-            <ul>
-              <li>As fotos devem ser originais e sem alterações.</li>
-              <li>
-                As fotos devem expor os ambientes visitados em inspeções
+			</div>
+			<button class="botaoInscricao" onclick="cadastro()">Faça Sua Inscrição</button>
+		</section>
+	</section>
+	
+	<section id="sobre">
+		<h2>SOBRE</h2>
+		<p>Objetivos</p>
+		<p>
+			Promover a seleção de 100 fotografias produzidas por colaboradores
+			do Inema em comemoração ao dia da água, que será elaborado um
+			mural de fotos denominado de "Varal das Águas".
+		</p>
+		<p>Dos Participantes</p>
+		<p>
+			Poderão participar do Concurso Fotográfico 2017: Todos os
+			colaboradores do Instituto do Meio Ambiente e Recursos Hídricos -
+			INEMA e Secretaria do Meio Ambiente - SEMA.
+		</p>
+		<p>Das especificações das fotografias participantes</p>
+		<p>
+			As fotografias devem abordar somente o tema OS DESAFIOS E AS
+			BELEZAS RETRATADAS EM CAMPO REFERENTE À SITUAÇÃO HÍDRICA, devendo
+			ser obrigatoriamente a foto ser tirada em inspeção em campo a
+			serviço do Inema.
+		</p>
+		<p>Premiação final do concurso</p>
+		<p>
+			As 05 (cinco) primeiras fotografias que forem mais votadas nas
+			redes sociais (Favebook e Instagram) do Inema, receberá como
+			prêmio.
+		</p>
+	</section>
+	
+	<section id="regras">
+		<h2>REGRAS</h2>
+		<p>
+			Todas as fotos que retrate da temática água (tais como situação de
+			secas ou excedentes hídricos, as belexas e os desafios de se
+			trabalhar com os recursos híbridos etc.) serão bem vindas.
+		</p>
+		<ul>
+			<li>As fotos devem ser originais e sem alterações.</li>
+			<li>
+				As fotos devem expor os ambientes visitados em inspeções
                 técnicas realizadas durante inspeções pelo INEMA.
-              </li>
-              <li>Fotografias que incluam pessoas serão desclassificadas.</li>
-              <li>
-                As fotos devem ser enviadas com um formulário de inscrição
+			</li>
+			<li>Fotografias que incluam pessoas serão desclassificadas.</li>
+			<li>
+				As fotos devem ser enviadas com um formulário de inscrição
                 preenchido.
-              </li>
-              <li>As fotografias do concurso se tornarão publicas.</li>
-              <li>
-                O fotógrafo da foto que receber mais votos ganhará um prêmio
+			</li>
+			<li>As fotografias do concurso se tornarão publicas.</li>
+			<li>
+				O fotógrafo da foto que receber mais votos ganhará um prêmio
                 simbólico.
-              </li>
-              <li>Cada pessoa só poderá cadastrar uma única foto.</li>
-              <li>A votação será por meio das redes sociais do INEMA.</li>
-              <li>As vagas serão limitadas apenas 50.</li>
-            </ul>
-            <p>
-              A foto vencedora irá ganhar um kit de brinde (Agenda, caneta,
-              livro).
-            </p>
-          </section>
-        </div>
-      </div>
-    </div>
+			</li>
+			<li>Cada pessoa só poderá cadastrar uma única foto.</li>
+			<li>A votação será por meio das redes sociais do INEMA.</li>
+			<li>As vagas serão limitadas apenas 50.</li>
+		</ul>
+		<p>
+			A foto vencedora irá ganhar um kit de brinde (Agenda, caneta,
+			livro).
+		</p>
+	</section>
+</div>
+</div>
+</div>
 
-    <div class="rodape">
-      <img src="marca_inema_sem_fundo.png" alt="marca do inema" />
-    </div>
+<div class="rodape">
+	<img src="marca_inema_sem_fundo.png" alt="marca do inema" />
+</div>
 
-    <script src="index.js"></script>
-  </body>
+</div>
+<script src="index.js"></script>
+</body>
 </html>

@@ -353,9 +353,14 @@ body {
 
 .top h2,
 .card h3,
-.termos h3 {
+.termos h3,
+.anexos h3 {
   margin: 0;
   padding: 1em;
+}
+
+#arquivo {
+  padding: 2em;
 }
 
 .fechar {
@@ -408,6 +413,7 @@ form input {
 .telaCadastro {
   width: 800px;
   margin-right: 1000px;
+  display: none;
 }
 .termosDeUso {
   width: 650px;
